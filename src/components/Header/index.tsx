@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import fundoHeader from '../../assets/image/fundo-header.png'
 import logo from '../../assets/image/logo.png'
-import { ImagemFundo } from './styles'
+import { ImagemFundo, Item } from './styles'
 
 export type Props = {
   dimension: 'big' | 'small'
@@ -28,19 +28,19 @@ const Header = ({
     <div>
       <ul>
         {restaurant === 'normal' && (
-          <li>
+          <Item>
             <Link to={'/restaurante'}>Restaurantes</Link>
-          </li>
+          </Item>
         )}
-        <li>
+        <Item>
           <Link to={'/'}>
             <img src={logo} alt={logo} />
           </Link>
-        </li>
+        </Item>
         {product === 'normal' && (
-          <li>
+          <Item>
             <Link to={'/carrinho'}>0 produto(s) no carrinho</Link>
-          </li>
+          </Item>
         )}
       </ul>
     </div>

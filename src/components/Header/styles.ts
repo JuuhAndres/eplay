@@ -11,6 +11,7 @@ export const ImagemFundo = styled.div<Props>`
   background-size: cover;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 
   position: relative;
 
@@ -21,22 +22,26 @@ export const ImagemFundo = styled.div<Props>`
       img === 'center' ? 'center' : 'space-between'};
     list-style: none;
     padding: 64px 168px;
-
-    li {
-      a {
-        color: ${cores.rosaEscuro};
-        font-weight: bold;
-        font-size: 18px;
-        line-height: 100%;
-      }
-    }
   }
 
   h3 {
-    position: absolute;
-    left: 414px;
-    top: 236px;
     display: ${({ description }) =>
       description === 'normal' ? 'block' : 'none'};
+
+    font-weight: 100;
+    font-size: 32px;
+    line-height: 100%;
+    align-item: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 88px;
+  }
+`
+export const Item = styled.li`
+  a {
+    color: ${cores.rosaEscuro};
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 100%;
   }
 `
