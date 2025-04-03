@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 export const Card = styled.div`
   background-color: ${cores.corCard};
   width: 472px;
-  height: 430px;
+  height: 460px;
   margin-top: 80px;
   border-width: 1px 1px 1px 1px;
   border-style: solid;
